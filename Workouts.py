@@ -1,5 +1,4 @@
-from Tkinter import Tk, Label, Button, Entry, Toplevel, Menu
-import tkFont # for creation new font (underlined)
+from tkinter import Tk, Label, Button, Entry, Toplevel, Menu, font
 import webbrowser # for open GitHub
 import time
 
@@ -86,7 +85,7 @@ class App():
             labelInfo3.grid(row = 2, column = 0, padx = 5, pady = 5)
             
             # my font for link to GitHub
-            myfont = tkFont.Font(labelInfo3, labelInfo3.cget("font"))
+            myfont = font.Font(labelInfo3, labelInfo3.cget("font"))
             myfont.configure(underline = True)
             labelInfo3.configure(font = myfont)
             
